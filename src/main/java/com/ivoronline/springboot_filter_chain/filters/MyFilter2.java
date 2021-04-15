@@ -1,5 +1,6 @@
 package com.ivoronline.springboot_filter_chain.filters;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.Filter;
@@ -10,6 +11,7 @@ import javax.servlet.ServletResponse;
 import java.io.IOException;
 
 @Component
+@Order(1)
 public class MyFilter2 implements Filter {
 
   @Override
